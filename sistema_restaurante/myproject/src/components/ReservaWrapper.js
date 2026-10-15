@@ -34,7 +34,7 @@ export const ReservaWrapper = () => {
         }
     return (
         <div className='ReservaWrapper'>
-            <h1>Get Things Done!</h1>
+            <h1>Restaurante caseiro</h1>
             <ReservaForm addReserva={addReserva} />
             {reservas.map((reserva, index) => (
                 reserva.isEditing ? (
