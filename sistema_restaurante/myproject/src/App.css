@@ -24,19 +24,19 @@ h1 {
   font-size: 1.75rem;
 }
 
-.TodoWrapper {
+.ReservaWrapper {
   background: #1A1A40;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
 }
 
-.TodoForm {
+.ReservaForm {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-.todo-input {
+.reserva-input {
   outline: none;
   background: none;
   border: 1px solid #8758ff;
@@ -47,11 +47,11 @@ h1 {
   color: #fff;
 }
 
-.todo-input::placeholder {
+.reserva-input::placeholder {
   color: #ffffff4d;
 }
 
-.todo-btn {
+.reserva-btn {
   background: #8758ff;
   color: #fff;
   border: none;
@@ -59,7 +59,7 @@ h1 {
   cursor: pointer;
 }
 
-.Todo {
+.Reserva {
   display: flex;
   justify-content: space-between;
   align-items: center;
