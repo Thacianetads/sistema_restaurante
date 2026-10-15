@@ -1,34 +1,34 @@
 import React, { useState } from 'react'
 
-export const TodoForm = ({addTodo}) => {
+export const ReservaForm = ({addReserva}) => {
         const [value, setValue] = useState("")
 
         const handleSubmit = e => {
             e.preventDefault();
 
-            addTodo(value);
+            addReserva(value);
 
             setValue("")
         }
     return (
-        <form className='TodoForm' onSubmit={handleSubmit}>
-            <input type="text" className='todo-input' value={value}
+        <form className='ReservaForm' onSubmit={handleSubmit}>
+            <input type="text" className='reserva-input' value={value}
             placeholder='Nome cliente' onChange=
             {(e) => setValue(e.target.value)} />
             <br></br>
-            <input type="date" className='todo-input' value={value}
+            <input type="date" className='reserva-input' value={value}
             placeholder='Data' onChange=
             {(e) => setValue(e.target.value)} />
             <br></br>
-            <input type="time" className='todo-input' value={value}
+            <input type="time" className='reserva-input' value={value}
             placeholder='Horario' onChange=
             {(e) => setValue(e.target.value)} />
             <br></br>
-            <input type="text" className='todo-input' value={value}
+            <input type="text" className='reserva-input' value={value}
             placeholder='Quantidade de pessoas' onChange=
             {(e) => setValue(e.target.value)} />
             <br></br>
-            <button type='submit' className='todo-btn'>Add Task</button>
+            <button type='submit' className='reserva-btn'>Add Task</button>
         </form>
     )
 }
