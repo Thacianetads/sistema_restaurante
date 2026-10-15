@@ -13,8 +13,21 @@ export const TodoForm = ({addTodo}) => {
     return (
         <form className='TodoForm' onSubmit={handleSubmit}>
             <input type="text" className='todo-input' value={value}
-            placeholder='what is the task today?' onChange=
+            placeholder='Nome cliente' onChange=
             {(e) => setValue(e.target.value)} />
+            <br></br>
+            <input type="date" className='todo-input' value={value}
+            placeholder='Data' onChange=
+            {(e) => setValue(e.target.value)} />
+            <br></br>
+            <input type="time" className='todo-input' value={value}
+            placeholder='Horario' onChange=
+            {(e) => setValue(e.target.value)} />
+            <br></br>
+            <input type="text" className='todo-input' value={value}
+            placeholder='Quantidade de pessoas' onChange=
+            {(e) => setValue(e.target.value)} />
+            <br></br>
             <button type='submit' className='todo-btn'>Add Task</button>
         </form>
     )
