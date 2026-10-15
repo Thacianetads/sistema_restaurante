@@ -3,12 +3,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
-export const Reserva = ( {lugar, toggleComplete, deleteReserva, editReserva} ) => {
+export const Reserva = ({ lugar, toggleComplete, deleteReserva, editReserva }) => {
     return (
         <div className='Reserva'>
-            <p onClick={() => toggleComplete(lugar.id)} 
-            className={lugar.completed ? 'completed': ''}
-            >{lugar.lugar}</p>
+            <div 
+                onClick={() => toggleComplete(lugar.id)} 
+                className={lugar.completed ? 'completed' : ''}
+                style={{ cursor: 'pointer' }}
+            >
+                <p><strong>Cliente:</strong> {lugar.lugar.nome}</p>
+                <p><strong>Data:</strong> {lugar.lugar.data}</p>
+                <p><strong>Horário:</strong> {lugar.lugar.hora}</p>
+                <p><strong>Quantidade:</strong> {lugar.lugar.qtde} pessoas</p>
+            </div>
             <div>
                 <FontAwesomeIcon icon={faPenToSquare} onClick={() => editReserva(lugar.id)} />
                 <FontAwesomeIcon icon={faTrash} onClick={() => deleteReserva(lugar.id)} />
