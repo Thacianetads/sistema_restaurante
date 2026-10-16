@@ -14,7 +14,7 @@ export const Reserva = ({ lugar, toggleComplete, deleteReserva, editReserva }) =
                 <p><strong>Cliente:</strong> {lugar.lugar.nome}</p>
                 <p><strong>Data:</strong> {lugar.lugar.data}</p>
                 <p><strong>Horário:</strong> {lugar.lugar.hora}</p>
-                <p><strong>Quantidade:</strong> {lugar.lugar.qtde} pessoas</p>
+                <p><strong>Pessoas:</strong> {lugar.lugar.qtde}</p>
             </div>
             <div>
                 <FontAwesomeIcon icon={faPenToSquare} onClick={() => editReserva(lugar.id)} />
