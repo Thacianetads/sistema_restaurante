@@ -36,7 +36,8 @@ export const ReservaForm = ({addReserva}) => {
                 name="nome" 
                 value={value.nome}
                 placeholder='Nome cliente' 
-                onChange={handleChange} 
+                onChange={handleChange}
+                required 
             />
             <br />
             <input 
@@ -45,7 +46,8 @@ export const ReservaForm = ({addReserva}) => {
                 name="data" 
                 value={value.data}
                 placeholder='Data' 
-                onChange={handleChange} 
+                onChange={handleChange}
+                required 
             />
             <br />
             <input 
@@ -54,7 +56,8 @@ export const ReservaForm = ({addReserva}) => {
                 name="hora" 
                 value={value.hora}
                 placeholder='Horario' 
-                onChange={handleChange} 
+                onChange={handleChange}
+                required 
             />
             <br />
             <input 
@@ -63,7 +66,8 @@ export const ReservaForm = ({addReserva}) => {
                 name="qtde" 
                 value={value.qtde} // Corrigido de qte para qtde
                 placeholder='Quantidade de pessoas' 
-                onChange={handleChange} 
+                onChange={handleChange}
+                required 
             />
             <br/>
 
