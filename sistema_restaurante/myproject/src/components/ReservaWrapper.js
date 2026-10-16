@@ -38,8 +38,11 @@ export const ReservaWrapper = () => {
             <ReservaForm addReserva={addReserva} />
             {reservas.map((reserva, index) => (
                 reserva.isEditing ? (
-                    <EditReserva editReserva={editLugar} lugar=
-                    {reserva} />
+                    <EditReserva 
+                        key={reserva.id || index}
+                        editReserva={editLugar} 
+                        lugar={{ ...reserva.lugar, id: reserva.id }}
+                    />
                 ) : (
                 <Reserva lugar={reserva} key={index} 
                 toggleComplete={toggleComplete} deleteReserva=
