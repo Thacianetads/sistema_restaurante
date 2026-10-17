@@ -8,10 +8,16 @@
 }
 
 body {
-  background: #8758ff;
+  background-image: url('./assets/img.jpg');
+  background-size: cover;          /* Faz a imagem cobrir toda a tela */
+  background-position: center;     /* Centraliza a imagem */
+  background-repeat: no-repeat;    /* Evita que a imagem fique se repetindo */
+  background-attachment: fixed;    /* Mantém o fundo fixo ao rolar a página */
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .App {
@@ -24,22 +30,22 @@ h1 {
   font-size: 1.75rem;
 }
 
-.TodoWrapper {
-  background: #1A1A40;
+.ReservaWrapper {
+  background: rgb(60, 60, 60);
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
 }
 
-.TodoForm {
+.ReservaForm {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-.todo-input {
+.reserva-input {
   outline: none;
   background: none;
-  border: 1px solid #8758ff;
+  border: 1px solid white;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -47,23 +53,23 @@ h1 {
   color: #fff;
 }
 
-.todo-input::placeholder {
+.reserva-input::placeholder {
   color: #ffffff4d;
 }
 
-.todo-btn {
-  background: #8758ff;
+.reserva-btn {
+  background: rgb(70, 70, 70);
   color: #fff;
   border: none;
   padding: 0.55rem;
   cursor: pointer;
 }
 
-.Todo {
+.Reserva {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8758ff;
+  background: rgb(70, 70, 70);
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 5px;

@@ -1,10 +1,9 @@
 import './App.css';
-import { TodoWrapper } from './components/TodoWrapper';
-
+import { ReservaWrapper } from './components/ReservaWrapper';
 function App() {
   return(
     <div className="App">
-     <TodoWrapper />
+     <ReservaWrapper />
     </div>
   );
 }
