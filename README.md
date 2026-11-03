@@ -30,5 +30,5 @@ Siga os passos abaixo para executar o projeto na sua máquina:
 
 ### Pré-requisitos
 - Certifique-se de ter o **Node.js** e o **npm** (ou **yarn** / **pnpm**) instalados na sua máquina.
-
-- Digite npm install e em seguida acesse: http://localhost:3000/
+- Digite npm install e em seguida npm start.
+- Acesse: http://localhost:3000/
