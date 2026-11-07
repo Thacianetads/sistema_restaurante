@@ -33,3 +33,7 @@ Siga os passos abaixo para executar o projeto na sua máquina:
 - Digite npm install e em seguida npm start.
 - Acesse: http://localhost:3000/
 - Para testes digite npm test.
+
+### Resultados
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e44f2b47-0a36-4b49-b0ce-f55883a2efa7" />
+
