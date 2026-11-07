@@ -32,3 +32,7 @@ Siga os passos abaixo para executar o projeto na sua máquina:
 - Certifique-se de ter o **Node.js** e o **npm** (ou **yarn** / **pnpm**) instalados na sua máquina.
 
 - Digite npm install e em seguida acesse: http://localhost:3000/
+
+### Resultados
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3b435d45-6b71-4ec0-8e60-892db2e16db8" />
