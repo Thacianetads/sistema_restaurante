@@ -15,6 +15,22 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ---
 
+## Estrutura
+
+```
+sistemarestaurante/
+  myproject/
+    src/                          React
+      assets/
+      components/
+          EditReserva.js
+          Reserva.js
+          ReservaForm.js
+          ReservaWrapper.js               
+      test/
+          FormularioReserva.test.js
+
+```
 ## ✨ Funcionalidades
 
 * **Visualização de Reservas:** Lista de reservas do dia organizadas por horários e mesas.
